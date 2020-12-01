@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30621.155
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddressBook_RestAPI", "AddressBook_RestAPI\AddressBook_RestAPI.csproj", "{B128C0CD-4769-41CA-B5CD-85F70D73F110}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AddressBook_RestAPI", "AddressBook_RestAPI\AddressBook_RestAPI.csproj", "{B128C0CD-4769-41CA-B5CD-85F70D73F110}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSTest", "MSTest\MSTest.csproj", "{8DB4468B-7AD2-480B-9838-70EB9BEAF3AC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{B128C0CD-4769-41CA-B5CD-85F70D73F110}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B128C0CD-4769-41CA-B5CD-85F70D73F110}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B128C0CD-4769-41CA-B5CD-85F70D73F110}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DB4468B-7AD2-480B-9838-70EB9BEAF3AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DB4468B-7AD2-480B-9838-70EB9BEAF3AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DB4468B-7AD2-480B-9838-70EB9BEAF3AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DB4468B-7AD2-480B-9838-70EB9BEAF3AC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
