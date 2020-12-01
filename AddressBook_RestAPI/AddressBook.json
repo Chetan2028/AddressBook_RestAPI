@@ -43,6 +43,39 @@
       "City": "Hyderabad",
       "State": "Telangana",
       "Type": "Friend"
+    },
+    {
+      "FirstName": "Sandy",
+      "LastName": "Pujeri",
+      "Zip": "590016",
+      "Address": "Hampi Nagar",
+      "City": "Bangalore",
+      "State": "Karnataka",
+      "PhoneNumber": "89514236445",
+      "Type": "Friend",
+      "id": 5
+    },
+    {
+      "FirstName": "Ash",
+      "LastName": "Pise",
+      "Zip": "590486",
+      "Address": " WhiteField",
+      "City": "Bangalore",
+      "State": "Karnataka",
+      "PhoneNumber": "7412569841",
+      "Type": "Friend",
+      "id": 6
+    },
+    {
+      "FirstName": "Daya",
+      "LastName": "Karagi",
+      "Zip": "590176",
+      "Address": "Maple Beach",
+      "City": "Karwar",
+      "State": "Karnataka",
+      "PhoneNumber": "89519876445",
+      "Type": "Family",
+      "id": 7
     }
   ]
 }
