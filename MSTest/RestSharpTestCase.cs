@@ -124,5 +124,15 @@ namespace MSTest
             Assert.AreEqual("Abhilash", dataResponse.FirstName);
             Console.WriteLine(response.Content);
         }
+
+        [TestMethod]
+        public void GivenContact_OnDelete_ShouldReturnStatus()
+        {
+            RestRequest request = new RestRequest("/addressBook/6", Method.DELETE);
+
+            IRestResponse response = client.Execute(request);
+
+            Assert.AreEqual(response.StatusCode, HttpStatusCode.OK);
+        }
     }
 }
