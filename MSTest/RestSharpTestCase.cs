@@ -14,6 +14,9 @@ namespace MSTest
     {
         RestClient client;
 
+        /// <summary>
+        /// Setups this instance.
+        /// </summary>
         [TestInitialize]
         public void Setup()
         {
@@ -56,6 +59,9 @@ namespace MSTest
             }
         }
 
+        /// <summary>
+        /// Givens the contact on post should return multiple contacts.
+        /// </summary>
         [TestMethod]
         public void GivenContact_OnPost_ShouldReturnMultipleContacts()
         {
@@ -91,6 +97,32 @@ namespace MSTest
                 Assert.AreEqual(contactData.LastName, dataResponse.LastName);
                 Console.WriteLine(response.Content);
             });
+        }
+
+        /// <summary>
+        /// Gets the employee on update should return updated employee.
+        /// </summary>
+        [TestMethod]
+        public void GetEmployee_OnUpdate_ShouldReturnUpdatedEmployee()
+        {
+            RestRequest request = new RestRequest("addressBook/5", Method.PUT);
+            JObject jObjectBody = new JObject();
+            jObjectBody.Add("FirstName", "Abhilash");
+            jObjectBody.Add("LastName", "Itnal");
+            jObjectBody.Add("Zip", "541258");
+            jObjectBody.Add("Address", "Anjaney Nagar");
+            jObjectBody.Add("City", "Belgaum");
+            jObjectBody.Add("State", "Karnataka");
+            jObjectBody.Add("PhoneNumber", "8523146972");
+            jObjectBody.Add("Type", "Friend");
+            request.AddParameter("application/json", jObjectBody, ParameterType.RequestBody);
+
+            IRestResponse response = client.Execute(request);
+
+            Assert.AreEqual(response.StatusCode, HttpStatusCode.OK);
+            AddressBook dataResponse = JsonConvert.DeserializeObject<AddressBook>(response.Content);
+            Assert.AreEqual("Abhilash", dataResponse.FirstName);
+            Console.WriteLine(response.Content);
         }
     }
 }
