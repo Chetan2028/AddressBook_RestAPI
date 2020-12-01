@@ -1,0 +1,48 @@
+{
+  "addressBook": [
+    {
+      "id": 1,
+      "FirstName": "Naveen",
+      "LastName": "Malagoudar",
+      "Address": "Mahantesh Nagar",
+      "Zip": "590016",
+      "PhoneNumber": "8951604950",
+      "City": "Belgaum",
+      "State": "Karnataka",
+      "Type": "Family"
+    },
+    {
+      "id": 2,
+      "FirstName": "Vivek",
+      "LastName": "Karagi",
+      "Address": "Anand Nagar",
+      "Zip": "591816",
+      "PhoneNumber": "7456982315",
+      "City": "Dharwad",
+      "State": "Karnataka",
+      "Type": "Family"
+    },
+    {
+      "id": 3,
+      "FirstName": "Abhishek",
+      "LastName": "Apte",
+      "Address": "Sondur",
+      "Zip": "590276",
+      "PhoneNumber": "962581475",
+      "City": "Bellary",
+      "State": "Karnataka",
+      "Type": "Friend"
+    },
+    {
+      "id": 4,
+      "FirstName": "Akshay",
+      "LastName": "Uppar",
+      "Address": "Ameerpet",
+      "Zip": "485697",
+      "PhoneNumber": "8532164975",
+      "City": "Hyderabad",
+      "State": "Telangana",
+      "Type": "Friend"
+    }
+  ]
+}
